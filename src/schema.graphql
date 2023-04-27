@@ -1,0 +1,15 @@
+
+# Custom Scalars
+scalar Any
+scalar Date
+
+
+type HelloResponse {
+    message: String!
+}
+
+type Query {
+    hello(
+        message: String!
+    ): HelloResponse
+}
